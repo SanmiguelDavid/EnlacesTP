@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Web</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5e1eb; /* Color de fondo rosado claro */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: #d3a5b9; /* Color de fondo morado claro */
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .titulo {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .descripcion {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        button {
+            padding: 15px; /* Aumenté el tamaño de los botones */
+            font-size: 16px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        #vark-btn {
+            background-color: #ff7eb9; /* Color rosa */
+        }
+
+        #problem-solving-btn {
+            background-color: #9b59b6; /* Color morado */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">Ejemplo de Título</div>
+        <div class="descripcion">Ejemplo de Descripción larga que puede ocupar más espacio en la interfaz. Puedes ajustar este texto según tus necesidades.</div>
+
+        <div class="botones">
+            <button id="vark-btn" onclick="abrirEnlace('https://enlace1.com')">VARK</button>
+            <button id="problem-solving-btn" onclick="abrirEnlace('https://enlace2.com')">Problem Solving</button>
+        </div>
+    </div>
+
+    <script>
+        function abrirEnlace(enlace) {
+            window.open(enlace, '_blank');
+        }
+    </script>
+</body>
+</html>
